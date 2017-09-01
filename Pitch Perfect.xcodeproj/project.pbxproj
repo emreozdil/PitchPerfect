@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A5E15881F585C75009B1964 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E15871F585C75009B1964 /* PlaySoundsViewController.swift */; };
 		9A778A571F58329D00694272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A778A561F58329D00694272 /* AppDelegate.swift */; };
-		9A778A591F58329D00694272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A778A581F58329D00694272 /* ViewController.swift */; };
+		9A778A591F58329D00694272 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A778A581F58329D00694272 /* RecordSoundsViewController.swift */; };
 		9A778A5C1F58329D00694272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A778A5A1F58329D00694272 /* Main.storyboard */; };
 		9A778A5E1F58329D00694272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A778A5D1F58329D00694272 /* Assets.xcassets */; };
 		9A778A611F58329D00694272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A778A5F1F58329D00694272 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A5E15871F585C75009B1964 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		9A778A531F58329D00694272 /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A778A561F58329D00694272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A778A581F58329D00694272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A778A581F58329D00694272 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		9A778A5B1F58329D00694272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A778A5D1F58329D00694272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A778A601F58329D00694272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				9A778A561F58329D00694272 /* AppDelegate.swift */,
-				9A778A581F58329D00694272 /* ViewController.swift */,
+				9A778A581F58329D00694272 /* RecordSoundsViewController.swift */,
+				9A5E15871F585C75009B1964 /* PlaySoundsViewController.swift */,
 				9A778A5A1F58329D00694272 /* Main.storyboard */,
 				9A778A5D1F58329D00694272 /* Assets.xcassets */,
 				9A778A5F1F58329D00694272 /* LaunchScreen.storyboard */,
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A778A591F58329D00694272 /* ViewController.swift in Sources */,
+				9A778A591F58329D00694272 /* RecordSoundsViewController.swift in Sources */,
+				9A5E15881F585C75009B1964 /* PlaySoundsViewController.swift in Sources */,
 				9A778A571F58329D00694272 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,12 +215,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -262,10 +267,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
