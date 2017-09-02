@@ -1,0 +1,6 @@
+{
+  "language": "swift",
+  "osx_image": "xcode9",
+  "xcode_project": "Pitch Perfect.xcodeproj",
+  "os": "osx"
+}
