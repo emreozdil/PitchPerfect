@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=12.2,name=iPhone X']
+          
+    steps:
+    - uses: actions/checkout@master
+    - name: Build
+      run: |
+        
+          xcodebuild clean test -project Pitch\ Perfect.xcodeproj -scheme Pitch\ Perfect -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+      env: 
+        destination: ${{ matrix.destination }}
